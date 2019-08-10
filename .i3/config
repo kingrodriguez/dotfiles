@@ -16,7 +16,7 @@ font xft:DejaVuSansMono Nerd Font Mono 30
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -147,6 +147,7 @@ workspace $ws8 output $monitor3
 # Open applications on specific workspaces
 assign [class="Thunderbird"] $ws8
 assign [class="firefox"] $ws4
+assign [class="Pamac-manager"] $ws6
 
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
@@ -236,6 +237,7 @@ bar
 	position top
 	mode dock
 	workspace_buttons no
+	status_command i3blocks -c ~/.i3/blocksconfig
 	
 	##tray settings
 	tray_output none
@@ -245,13 +247,14 @@ bar
 	bindsym button1 nop
 
 	##style
-	font xft:DejaVuSansMono Nerd Font Mono 30
-	height 30
+	font xft:DejaVuSansMono Nerd Font Mono 20
+	height 20
+	separator_symbol ""
 	colors
 	{
 		background	$term_black2
-		statusline	$term_red1
-		separator	$term_red1
+		statusline	$term_green1
+		separator	$term_cyan1
 		#class			#border		#background		#text
 		focused_background	$term_black2	$term_red1		$term_red1  
 		focused_statusline	$term_red1	$term_red1		$term_red1

@@ -5,7 +5,7 @@ sudo pacman -Syy
 #software changes
 sudo install_pulse
 sudo pacman -R palemoon-bin
-sudo pacman -S firefox rofi python-colour python-netifaces gtk-chtheme
+sudo pacman -S firefox rofi python-colour python-netifaces gtk-chtheme xorg-xwininfo
 
 #git stuff
 git config --global user.email "16023711+kingrodriguez@users.noreply.github.com:"
