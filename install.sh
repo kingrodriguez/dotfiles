@@ -19,6 +19,8 @@ xargs -I{} mv {} .config-backup/{}
 config checkout
 config config --local status.showUntrackedFiles no
 
+#NERDTree
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 #oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
