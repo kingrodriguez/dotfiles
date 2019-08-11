@@ -6,6 +6,12 @@ filetype plugin indent on
 set nocompatible 
 set number
 
+" keymaps
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " colors
 set background=dark
 colorscheme solarized
